@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    environment:
+      FLASK_RUN_RELOAD: 1
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./src:/usr/src/app
